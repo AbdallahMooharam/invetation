@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, rgba(228, 217, 217, 0.8), rgba(44, 4, 4, 0.8)), url('https://i.pinimg.com/736x/3f/78/2f/3f782fcdb89d34965f22d90f4b2daed4.jpg');
+  background-size: cover;
+}
+
+.bg-gradient {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes laser {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+}
+
+.laser-effect {
+  position: relative; /* تأكد من أن العنصر لديه موقع نسبي */
+  animation: laser 1s infinite alternate; /* إضافة الحركة إلى العنصر */
+}
+
+.laser-effect:before {
+  content: '';
+  position: absolute;
+  top: -4px; /* قم بتعديل هذه القيم حسب الحاجة */
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid transparent;
+  border-radius: 10px; /* قم بتعديل الزوايا حسب الحاجة */
+  background: rgba(255, 0, 0, 0.5);
+  animation: laser 1s infinite alternate; /* تأثير الليزر */
+  z-index: -1; /* يجعله خلف العنصر */
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: rgba(255, 0, 0, 0.5);
+  animation: laser 1s infinite alternate;
+  z-index: -1; /* يجعله خلف المدخل */
+}

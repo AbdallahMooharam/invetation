@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/invetation/static/css/main.bc16c964.css",
+    "main.js": "/invetation/static/js/main.09eb4b2b.js",
+    "static/js/453.40063271.chunk.js": "/invetation/static/js/453.40063271.chunk.js",
+    "index.html": "/invetation/index.html",
+    "main.bc16c964.css.map": "/invetation/static/css/main.bc16c964.css.map",
+    "main.09eb4b2b.js.map": "/invetation/static/js/main.09eb4b2b.js.map",
+    "453.40063271.chunk.js.map": "/invetation/static/js/453.40063271.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc16c964.css",
+    "static/js/main.09eb4b2b.js"
+  ]
+}
